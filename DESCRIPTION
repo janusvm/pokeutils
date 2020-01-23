@@ -1,6 +1,6 @@
 Package: pokeutils
 Title: Utility Functions For Pokémon Calculations
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R:
     person(given = "Janus",
            family = "Valberg-Madsen",
@@ -12,5 +12,5 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2
-Suggests: 
-    testthat
+Suggests:
+    testthat (>= 2.1.0)
