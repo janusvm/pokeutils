@@ -3,6 +3,7 @@ test_that("HP is calculated correctly", {
   expect_equal(stat_value(base =  70, level =  50, iv = 31, ev = 252, is_hp = TRUE), 177)
   expect_equal(stat_value(base =  70, level =  50, iv =  0, ev =   0, is_hp = TRUE), 130)
   expect_equal(stat_value(base = 255, level = 100, iv = 31, ev = 252, is_hp = TRUE), 714)
+  expect_equal(stat_value(base =   1, level = 100, iv = 31, ev = 252, is_hp = TRUE),   1)
 
   # Check that HP is unaffected by nature
   expect_length(unique(c(

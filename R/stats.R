@@ -21,7 +21,8 @@ stat_value <- function(base, level = 50, iv = 31, ev = 252, nature = c("positive
   )
 
   if (is_hp) {
-    ((2 * base + iv + ev %/% 4) * level) %/% 100 + level + 10
+    if (base == 1) 1L
+    else ((2 * base + iv + ev %/% 4) * level) %/% 100 + level + 10
   } else {
     floor((((2 * base + iv + ev %/% 4) * level) %/% 100 + 5) * nature)
   }
